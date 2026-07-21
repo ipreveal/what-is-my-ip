@@ -17,11 +17,17 @@
 <link rel="alternate" hreflang="x-default" href="https://pulkit899op.github.io/what-is-my-ip/">
 <meta name="theme-color" content="#3454ff">
 
-<!-- Favicon + touch icons: real PNG files, generated locally, no external fetch -->
+<!-- Icons -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233454ff'/%3E%3Ccircle cx='32' cy='24' r='9' fill='%2300d4b8'/%3E%3Cpath d='M14 50c3-12 13-18 18-18s15 6 18 18' stroke='%23ffffff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<!-- Fonts + Font Awesome -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -50,12 +56,7 @@
       "@id": "https://pulkit899op.github.io/what-is-my-ip/#organization",
       "name": "What Is My IP",
       "url": "https://pulkit899op.github.io/what-is-my-ip/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://pulkit899op.github.io/what-is-my-ip/logo.svg",
-        "width": 64,
-        "height": 64
-      }
+      "logo": {"@type": "ImageObject", "url": "https://pulkit899op.github.io/what-is-my-ip/logo.svg", "width": 64, "height": 64}
     },
     {
       "@type": "WebSite",
@@ -63,11 +64,7 @@
       "name": "What Is My IP",
       "url": "https://pulkit899op.github.io/what-is-my-ip/",
       "publisher": {"@id": "https://pulkit899op.github.io/what-is-my-ip/#organization"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://pulkit899op.github.io/what-is-my-ip/?ip={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "potentialAction": {"@type": "SearchAction", "target": "https://pulkit899op.github.io/what-is-my-ip/?ip={search_term_string}", "query-input": "required name=search_term_string"}
     },
     {
       "@type": "WebApplication",
@@ -77,42 +74,20 @@
       "browserRequirements": "Requires JavaScript",
       "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
       "url": "https://pulkit899op.github.io/what-is-my-ip/",
-      "description": "Free browser tool that auto-detects a visitor's public IP address and looks up location, ISP, ASN, and timezone data for any IPv4 or IPv6 address."
+      "description": "Free browser tool to look up the location, ISP, ASN, and timezone of any IPv4 or IPv6 address, and auto-detect your own IP."
     },
     {
       "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pulkit899op.github.io/what-is-my-ip/"}
-      ]
+      "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pulkit899op.github.io/what-is-my-ip/"}]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is my IP address?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Your IP address is the unique numeric identifier assigned to your device by your internet service provider so it can send and receive data online. This tool detects and displays it automatically at the top of the page."}
-        },
-        {
-          "@type": "Question",
-          "name": "Is my IP address my exact location?",
-          "acceptedAnswer": {"@type": "Answer", "text": "No. Your IP address maps to an approximate location, usually your city or region, based on records held by your internet provider. It is not your exact street address and accuracy varies by provider and connection type."}
-        },
-        {
-          "@type": "Question",
-          "name": "Can someone track me using my IP address?",
-          "acceptedAnswer": {"@type": "Answer", "text": "An IP address alone reveals only your approximate region and internet provider, not your identity or precise home address. Combined with other data it can contribute to tracking, which is why a VPN adds privacy."}
-        },
-        {
-          "@type": "Question",
-          "name": "Why does my IP address change?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Most home internet connections use dynamic IP addresses that your provider reassigns periodically or when you restart your router. Mobile networks and VPNs also change your visible IP whenever you switch networks or servers."}
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between IPv4 and IPv6?",
-          "acceptedAnswer": {"@type": "Answer", "text": "IPv4 uses a 32-bit address written as four numbers separated by dots, giving about 4.3 billion possible addresses, which is now nearly exhausted. IPv6 uses a 128-bit address written in hexadecimal groups, providing a vastly larger supply for the growing number of connected devices."}
-        }
+        {"@type": "Question", "name": "What is my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "Your IP address is the number your internet provider gives your device so it can send and receive data online. It's shown automatically on this page."}},
+        {"@type": "Question", "name": "Is my IP address my exact location?", "acceptedAnswer": {"@type": "Answer", "text": "No. It points to your rough city or region, not your street address, and accuracy varies by provider."}},
+        {"@type": "Question", "name": "Can someone track me using my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "By itself, an IP only shows your rough region and provider, not your identity. A VPN can hide it if you want extra privacy."}},
+        {"@type": "Question", "name": "Why does my IP address change?", "acceptedAnswer": {"@type": "Answer", "text": "Most home connections use dynamic IPs that your provider reassigns from time to time, including after a router restart."}},
+        {"@type": "Question", "name": "What is the difference between IPv4 and IPv6?", "acceptedAnswer": {"@type": "Answer", "text": "IPv4 addresses are shorter and nearly used up. IPv6 is a longer format built to support far more devices."}}
       ]
     }
   ]
@@ -121,9 +96,9 @@
 
 <style>
   :root{
-    --bg:#f3f6ff;
+    --bg:#e9eefb;
     --card:#ffffff;
-    --border:#e4e9f5;
+    --border:#d7deef;
     --text:#161b2e;
     --muted:#5c6480;
 
@@ -137,12 +112,12 @@
     --orange-soft:#fff1e3;
     --pink:#ff5c8a;
     --pink-soft:#ffe7ee;
-    --yellow:#ffb703;
+    --yellow:#e0a300;
     --yellow-soft:#fff6e0;
 
     --radius:16px;
-    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --font:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -156,70 +131,50 @@
     font-family:var(--font);
     line-height:1.6;
     min-height:100vh;
+    -webkit-font-smoothing:antialiased;
   }
   a{color:var(--blue);}
-  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 90px;}
+  .wrap{max-width:1080px;margin:0 auto;padding:20px 18px 0;}
 
   /* ---------- Header ---------- */
-  header.site{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;}
+  header.site{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px;flex-wrap:wrap;gap:10px;}
   .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;color:var(--text);text-decoration:none;}
   .brand svg{display:block;}
   nav.site a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:.92rem;font-weight:600;}
+  nav.site a i{margin-right:5px;}
   nav.site a:hover{color:var(--blue);}
 
-  /* ---------- Your IP banner (top, secondary emphasis) ---------- */
-  .ip-banner{
-    background:linear-gradient(120deg, var(--blue) 0%, var(--purple) 100%);
-    border-radius:var(--radius);
-    padding:22px 26px;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:18px;
-    flex-wrap:wrap;
-    box-shadow:0 20px 40px -22px rgba(52,84,255,.55);
-  }
-  .ip-banner .label{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;opacity:.85;font-weight:700;}
-  .ip-banner .value{font-family:var(--mono);font-size:clamp(1.3rem,3.6vw,2rem);font-weight:800;margin-top:4px;word-break:break-all;}
-  .ip-banner .meta{font-size:.88rem;opacity:.9;margin-top:2px;}
-  .ip-banner .actions{display:flex;gap:8px;flex-wrap:wrap;}
-  .ip-banner button{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.35);}
-  .ip-banner button:hover{background:rgba(255,255,255,.26);}
+  h1{font-size:clamp(1.7rem,4.2vw,2.6rem);margin:6px 0 8px;text-align:center;letter-spacing:-.02em;font-weight:800;}
+  .sub{color:var(--muted);text-align:center;margin:0 auto 28px;font-size:1.05rem;max-width:520px;}
 
-  h1{
-    font-size:clamp(1.6rem, 4vw, 2.4rem);
-    margin:38px 0 6px;
-    text-align:center;
-    letter-spacing:-.01em;
-  }
-  .sub{color:var(--muted);text-align:center;margin:0 0 26px;font-size:1.05rem;}
-
-  /* ---------- Search (primary tool) ---------- */
+  /* ---------- Search (primary, centered hero) ---------- */
   .search-card{
     background:var(--card);
     border:1px solid var(--border);
     border-radius:var(--radius);
-    padding:30px 26px;
-    box-shadow:0 24px 50px -28px rgba(20,30,60,.18);
+    padding:34px 30px;
+    box-shadow:0 26px 54px -26px rgba(20,30,60,.22);
+    max-width:720px;
+    margin:0 auto;
   }
-  .search-card h2{margin:0 0 4px;font-size:1.2rem;}
-  .search-card .hint{color:var(--muted);font-size:.92rem;margin:0 0 18px;}
-  .lookup-box{display:flex;gap:10px;flex-wrap:wrap;}
+  .search-card h2{margin:0 0 4px;font-size:1.05rem;display:flex;align-items:center;gap:9px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em;}
+  .search-card h2 i{color:var(--blue);font-size:1rem;}
+  .lookup-box{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
   .lookup-box input{
-    flex:1;min-width:220px;
+    flex:1;min-width:200px;
     background:var(--bg);border:1.5px solid var(--border);color:var(--text);
-    padding:14px 16px;border-radius:12px;font-size:1rem;font-family:var(--mono);
+    padding:15px 16px;border-radius:12px;font-size:1.05rem;font-family:var(--mono);
   }
   .lookup-box input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px var(--blue-soft);}
   button{
-    background:var(--blue);color:#fff;border:none;padding:14px 26px;border-radius:12px;
-    font-weight:700;cursor:pointer;font-size:.98rem;
+    background:var(--blue);color:#fff;border:none;padding:15px 26px;border-radius:12px;
+    font-weight:700;cursor:pointer;font-size:.98rem;font-family:var(--font);
     transition:transform .15s ease, opacity .15s ease;
     box-shadow:0 10px 24px -10px rgba(52,84,255,.6);
+    display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
   }
   button.secondary{background:var(--bg);color:var(--text);border:1.5px solid var(--border);box-shadow:none;}
-  button.small{padding:9px 16px;font-size:.85rem;}
+  button.small{padding:9px 15px;font-size:.83rem;}
   button:hover{transform:translateY(-1px);opacity:.95;}
   button:active{transform:translateY(0);}
 
@@ -227,45 +182,74 @@
   .status.error{color:var(--pink);font-weight:600;}
   .status.ok{color:var(--teal);font-weight:600;}
 
-  .details-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px,1fr));gap:12px;margin-top:22px;}
+  .details-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(190px,1fr));gap:12px;margin-top:22px;}
   .detail{border-radius:12px;padding:14px 16px;border:1px solid var(--border);}
-  .detail .k{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;font-weight:800;}
-  .detail .v{font-size:1.05rem;font-weight:700;margin-top:4px;word-break:break-word;color:var(--text);}
-  .detail:nth-child(6n+1){background:var(--blue-soft);} .detail:nth-child(6n+1) .k{color:#2544c9;}
-  .detail:nth-child(6n+2){background:var(--teal-soft);} .detail:nth-child(6n+2) .k{color:#0a8c7a;}
-  .detail:nth-child(6n+3){background:var(--purple-soft);} .detail:nth-child(6n+3) .k{color:#6a3cc0;}
-  .detail:nth-child(6n+4){background:var(--orange-soft);} .detail:nth-child(6n+4) .k{color:#c9631a;}
-  .detail:nth-child(6n+5){background:var(--pink-soft);} .detail:nth-child(6n+5) .k{color:#d63f6c;}
-  .detail:nth-child(6n+6){background:var(--yellow-soft);} .detail:nth-child(6n+6) .k{color:#a17300;}
+  .detail .k{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;font-weight:800;display:flex;align-items:center;gap:6px;}
+  .detail .v{font-size:1.05rem;font-weight:700;margin-top:5px;word-break:break-word;color:var(--text);}
+  .detail:nth-child(9n+1){background:var(--blue-soft);} .detail:nth-child(9n+1) .k{color:#2544c9;}
+  .detail:nth-child(9n+2){background:var(--teal-soft);} .detail:nth-child(9n+2) .k{color:#0a8c7a;}
+  .detail:nth-child(9n+3){background:var(--purple-soft);} .detail:nth-child(9n+3) .k{color:#6a3cc0;}
+  .detail:nth-child(9n+4){background:var(--orange-soft);} .detail:nth-child(9n+4) .k{color:#c9631a;}
+  .detail:nth-child(9n+5){background:var(--pink-soft);} .detail:nth-child(9n+5) .k{color:#d63f6c;}
+  .detail:nth-child(9n+6){background:var(--yellow-soft);} .detail:nth-child(9n+6) .k{color:#a17300;}
+  .detail:nth-child(9n+7){background:var(--blue-soft);} .detail:nth-child(9n+7) .k{color:#2544c9;}
+  .detail:nth-child(9n+8){background:var(--teal-soft);} .detail:nth-child(9n+8) .k{color:#0a8c7a;}
+  .detail:nth-child(9n+9){background:var(--purple-soft);} .detail:nth-child(9n+9) .k{color:#6a3cc0;}
+
+  /* ---------- My IP: secondary strip below search ---------- */
+  .myip-strip{
+    max-width:720px;margin:16px auto 0;
+    background:var(--card);border:1px dashed var(--border);border-radius:12px;
+    padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  }
+  .myip-strip .left{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.92rem;}
+  .myip-strip .left i{color:var(--teal);font-size:1.1rem;}
+  .myip-strip .ip{font-family:var(--mono);font-weight:700;color:var(--text);}
+  .myip-strip .meta{color:var(--muted);font-size:.85rem;}
+  .myip-strip .right{display:flex;gap:8px;}
 
   /* ---------- Article content ---------- */
-  article.info{margin-top:54px;}
-  article.info section{margin-top:34px;}
-  article.info h2{font-size:1.55rem;margin:0 0 10px;color:var(--text);border-left:5px solid var(--blue);padding-left:12px;}
-  article.info h3{font-size:1.2rem;margin:22px 0 8px;color:#26306b;}
-  article.info h4{font-size:1.02rem;margin:16px 0 6px;color:var(--purple);}
-  article.info h5{font-size:.92rem;margin:12px 0 4px;color:#0a8c7a;text-transform:uppercase;letter-spacing:.04em;}
-  article.info h6{font-size:.82rem;margin:10px 0 4px;color:var(--muted);font-weight:700;}
-  article.info p{color:#333d55;margin:0 0 12px;}
-  article.info ul{color:#333d55;padding-left:22px;margin:0 0 12px;}
-  article.info li{margin-bottom:6px;}
+  article.info{margin-top:56px;max-width:760px;margin-left:auto;margin-right:auto;}
+  article.info section{margin-top:30px;}
+  article.info h2{font-size:1.4rem;margin:0 0 10px;color:var(--text);border-left:5px solid var(--blue);padding-left:12px;display:flex;align-items:center;gap:10px;font-weight:800;}
+  article.info h2 i{color:var(--blue);font-size:1.1rem;}
+  article.info h3{font-size:1.12rem;margin:18px 0 6px;color:#26306b;font-weight:700;}
+  article.info h4{font-size:.98rem;margin:14px 0 5px;color:var(--purple);font-weight:700;}
+  article.info h5{font-size:.86rem;margin:10px 0 4px;color:#0a8c7a;text-transform:uppercase;letter-spacing:.04em;font-weight:700;}
+  article.info h6{font-size:.78rem;margin:8px 0 3px;color:var(--muted);font-weight:700;}
+  article.info p{color:#333d55;margin:0 0 10px;font-size:.97rem;}
 
   .faq details{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:10px;}
-  .faq summary{cursor:pointer;font-weight:700;}
+  .faq summary{cursor:pointer;font-weight:700;display:flex;align-items:center;gap:8px;}
+  .faq summary i{color:var(--pink);}
   .faq p{color:var(--muted);margin:10px 0 0;}
 
-  footer.site{margin-top:60px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);padding-top:20px;}
-  footer.site a{color:var(--muted);text-decoration:underline;}
-
-  .icon{width:18px;height:18px;vertical-align:-4px;margin-right:8px;flex-shrink:0;}
-  button .icon{width:16px;height:16px;vertical-align:-3px;margin-right:6px;}
-  .icon-h2{width:22px;height:22px;vertical-align:-5px;margin-right:10px;}
-  article.info h2{display:flex;align-items:center;}
-  .search-card h2{display:flex;align-items:center;}
+  /* ---------- Footer ---------- */
+  footer.site{margin-top:70px;background:#141830;color:#b9c0d9;padding:44px 0 24px;}
+  footer.site .wrap{padding-top:0;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;}
+  @media (max-width:700px){ .footer-grid{grid-template-columns:1fr;gap:26px;} }
+  .footer-brand{display:flex;align-items:center;gap:10px;font-weight:800;color:#fff;font-size:1.1rem;margin-bottom:10px;}
+  .footer-col h3{color:#fff;font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;margin:0 0 12px;}
+  .footer-col ul{list-style:none;padding:0;margin:0;}
+  .footer-col li{margin-bottom:9px;}
+  .footer-col a{color:#b9c0d9;text-decoration:none;font-size:.92rem;}
+  .footer-col a i{width:18px;color:#7c86b8;margin-right:6px;}
+  .footer-col a:hover{color:#fff;}
+  .footer-bottom{border-top:1px solid #262b4a;margin-top:34px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;color:#7c86b8;}
 
   .skip-link{position:absolute;left:-999px;top:auto;}
   .skip-link:focus{left:10px;top:10px;background:var(--blue);color:#fff;padding:8px 14px;border-radius:8px;z-index:100;}
   .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+
+  @media (max-width:520px){
+    .search-card{padding:24px 18px;}
+    .lookup-box{flex-direction:column;}
+    .lookup-box button{width:100%;justify-content:center;}
+    .myip-strip{flex-direction:column;align-items:flex-start;}
+    .myip-strip .right{width:100%;}
+    .myip-strip .right button{flex:1;justify-content:center;}
+  }
 </style>
 </head>
 <body>
@@ -274,7 +258,7 @@
 
 <header class="site">
   <a href="/" class="brand" aria-label="What Is My IP home">
-    <svg width="34" height="34" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="What Is My IP logo">
+    <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="What Is My IP logo">
       <rect width="64" height="64" rx="16" fill="#3454ff"/>
       <circle cx="32" cy="24" r="9" fill="#00d4b8"/>
       <path d="M14 50c3-12 13-18 18-18s15 6 18 18" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
@@ -282,130 +266,154 @@
     What Is My IP
   </a>
   <nav class="site" aria-label="Primary">
-    <a href="#lookup">Lookup</a>
-    <a href="#guide">Guide</a>
-    <a href="#faq">FAQ</a>
+    <a href="#lookup"><i class="fa-solid fa-magnifying-glass"></i>Lookup</a>
+    <a href="#guide"><i class="fa-solid fa-book"></i>Guide</a>
+    <a href="#faq"><i class="fa-solid fa-circle-question"></i>FAQ</a>
   </nav>
 </header>
 
-<!-- Your IP: shown first, on top -->
-<section class="ip-banner" aria-label="Your current IP address">
-  <div>
-    <div class="label">Your Current IP Address</div>
-    <div class="value" id="myIp">Detecting…</div>
-    <div class="meta" id="myIpMeta"></div>
-  </div>
-  <div class="actions">
-    <button id="copyBtn" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="4" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>Copy</button>
-    <button id="useMyIpBtn" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Search This IP</button>
-  </div>
-</section>
-
 <main id="main">
   <h1>Look Up Any IP Address</h1>
-  <p class="sub">Search an IP to see its location, ISP and network details — free, no signup, nothing stored.</p>
+  <p class="sub">Search an IP to see where it's from and who owns it. Free, fast, nothing saved.</p>
 
   <section class="search-card" id="lookup" aria-label="IP lookup tool">
-    <h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#3454ff" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="#3454ff" stroke-width="2" stroke-linecap="round"/></svg>Search an IP Address</h2>
-    <p class="hint">Enter any public IPv4 or IPv6 address, e.g. 8.8.8.8</p>
+    <h2><i class="fa-solid fa-magnifying-glass"></i>Search an IP address</h2>
     <div class="lookup-box">
       <label for="ipInput" class="visually-hidden">IP address to look up</label>
-      <input type="text" id="ipInput" placeholder="Enter an IP address…" autocomplete="off" spellcheck="false">
-      <button id="lookupBtn" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Search</button>
+      <input type="text" id="ipInput" placeholder="e.g. 8.8.8.8" autocomplete="off" spellcheck="false">
+      <button id="lookupBtn" type="button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
     </div>
     <div class="status" id="lookupStatus"></div>
     <div class="details-grid" id="lookupResult" aria-live="polite"></div>
   </section>
 
+  <!-- Your IP: secondary, below the search hero -->
+  <section class="myip-strip" aria-label="Your current IP address">
+    <div class="left">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Your IP: <span class="ip" id="myIp">detecting…</span> <span class="meta" id="myIpMeta"></span></span>
+    </div>
+    <div class="right">
+      <button id="copyBtn" type="button" class="secondary small"><i class="fa-regular fa-copy"></i>Copy</button>
+      <button id="useMyIpBtn" type="button" class="secondary small"><i class="fa-solid fa-arrow-right"></i>Look it up</button>
+    </div>
+  </section>
+
   <article class="info" id="guide">
     <section>
-      <h2><svg class="icon icon-h2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#3454ff" stroke-width="2"/><path d="M3 12h18M12 3c2.8 2.6 4 5.6 4 9s-1.2 6.4-4 9c-2.8-2.6-4-5.6-4-9s1.2-6.4 4-9z" fill="none" stroke="#3454ff" stroke-width="1.6"/></svg>Understanding Your IP Address</h2>
-      <p>Every device that connects to the internet is assigned an IP address, a numeric label that lets networks route data to and from it correctly. Without this address, a website would have no way of knowing where to send the page you requested. Think of it as a postal code for your connection: not precise enough to find your front door, but accurate enough to get the data to roughly the right neighborhood.</p>
+      <h2><i class="fa-solid fa-globe"></i>Understanding Your IP Address</h2>
+      <p>Every device online gets an IP address — a number that tells the internet where to send data. It works like a postal code: not exact enough for your front door, but enough to get data to the right area.</p>
 
-      <h3>What Is an IPv4 Address</h3>
-      <p>IPv4 is the original addressing system still used by most home and mobile connections today. It writes an address as four numbers between 0 and 255, separated by dots, such as 192.168.1.1. This format allows for a little over four billion unique addresses, a number that seemed enormous in the 1980s but has since become a real constraint as billions of new devices came online.</p>
+      <h3>IPv4 vs IPv6</h3>
+      <p>IPv4 looks like 192.168.1.1 and only has about 4.3 billion possible addresses — most are already used up. IPv6 is a longer format that gives virtually unlimited addresses for the growing number of connected devices.</p>
 
-      <h3>What Is an IPv6 Address</h3>
-      <p>IPv6 was designed to solve that shortage. It uses a much longer 128-bit format written in hexadecimal groups separated by colons, which expands the available address space to a number large enough to assign a unique address to every grain of sand on Earth many times over. Adoption has been gradual, and many networks now run IPv4 and IPv6 side by side.</p>
-
-      <h4>Public vs Private IP Addresses</h4>
-      <p>A private IP address is only visible inside your home or office network — your router, laptop, and phone each get one so they can talk to each other. A public IP address is the one visible to the rest of the internet, usually assigned to your router by your provider and shared across every device behind it through a process called network address translation.</p>
+      <h4>Public vs Private IP</h4>
+      <p>A private IP only works inside your home network. A public IP is the one the internet sees, usually shared by all your devices through your router.</p>
     </section>
 
     <section>
-      <h2><svg class="icon icon-h2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z" fill="none" stroke="#00b6a0" stroke-width="2"/><path d="M9 12l2 2 4-4" fill="none" stroke="#00b6a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Why IP Location Isn't Always Accurate</h2>
-      <p>IP geolocation databases estimate location by matching address ranges to records reported by internet providers, not by tracking a device directly. That means accuracy is usually reliable at the country level, often correct at the city level, and rarely exact enough to pinpoint a building.</p>
+      <h2><i class="fa-solid fa-shield-halved"></i>Why IP Location Isn't Exact</h2>
+      <p>IP location is estimated from provider records, not GPS. It's usually right at the country level, often right at the city level, but never precise enough for a street address.</p>
 
-      <h3>Static vs Dynamic IP Addresses</h3>
-      <p>A static IP address stays the same indefinitely and is common for servers and business connections that need a fixed, predictable address. A dynamic IP address is reassigned periodically by the provider, which is standard for most home internet plans and is one reason your address may look different from one day to the next.</p>
+      <h3>Static vs Dynamic IP</h3>
+      <p>A static IP stays fixed, common for servers. A dynamic IP changes now and then — normal for most home internet.</p>
     </section>
 
     <section>
-      <h2><svg class="icon icon-h2" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2" fill="none" stroke="#8452e0" stroke-width="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4" fill="none" stroke="#8452e0" stroke-width="2"/></svg>How to Protect Your Privacy Online</h2>
-      <p>Because your IP address is visible to every site you visit, some people choose to mask it for privacy, security, or to access region-restricted content.</p>
+      <h2><i class="fa-solid fa-lock"></i>Protecting Your Privacy</h2>
+      <p>Your IP is visible to every site you visit. Here's how people hide it.</p>
 
-      <h3>Using a VPN</h3>
-      <p>A virtual private network routes your traffic through a remote server and encrypts it along the way, so websites see the VPN server's IP address instead of your own. This is the most common and generally most reliable method for hiding your real address while browsing.</p>
+      <h3>VPN</h3>
+      <p>Routes and encrypts your traffic through another server, so sites see that server's IP instead of yours.</p>
 
-      <h3>Using Proxies</h3>
-      <p>A proxy server also relays your traffic through a different address, but typically without the encryption a VPN provides. Proxies are often faster for simple tasks but offer weaker protection against anyone monitoring the connection itself.</p>
+      <h3>Proxy</h3>
+      <p>Also hides your IP, but usually without encryption — faster, less secure than a VPN.</p>
 
       <h4>Tor vs VPN</h4>
-      <p>Tor routes traffic through several volunteer-run relays and layers of encryption, making it harder to trace but noticeably slower than a typical VPN. A VPN usually offers better speed for everyday use, while Tor is built for stronger anonymity when speed is a lower priority.</p>
+      <p>Tor bounces traffic through several relays for stronger anonymity, but it's slower. A VPN is quicker for daily use.</p>
     </section>
 
     <section>
-      <h2><svg class="icon icon-h2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2V4z" fill="none" stroke="#ff8a3d" stroke-width="2"/><line x1="5" y1="4" x2="5" y2="20" stroke="#ff8a3d" stroke-width="2"/></svg>IP Address Glossary</h2>
+      <h2><i class="fa-solid fa-book-open"></i>Quick Glossary</h2>
       <h3>Networking Terms</h3>
 
       <h4>ISP</h4>
-      <p>An internet service provider is the company that connects your home, office, or mobile device to the internet and assigns the public IP address your connection uses.</p>
+      <p>The company that connects you to the internet and hands out your public IP.</p>
 
-      <h5>Tier 1 vs Tier 2 ISPs</h5>
-      <p>Tier 1 providers own long-distance backbone infrastructure and exchange traffic directly with each other, while Tier 2 providers typically pay for some of their connectivity through a Tier 1 network.</p>
+      <h5>Tier 1 vs Tier 2</h5>
+      <p>Tier 1 providers own the backbone. Tier 2 providers usually pay to connect through them.</p>
 
       <h6>Example</h6>
-      <p>A regional cable or fiber provider serving one city is usually a Tier 2 or Tier 3 ISP, purchasing upstream bandwidth from a larger backbone operator.</p>
+      <p>A local cable company is typically Tier 2, buying bandwidth from a bigger backbone operator.</p>
 
       <h4>ASN</h4>
-      <p>An autonomous system number identifies a network operator on the internet, such as an ISP or large company, and is used in routing decisions between networks.</p>
+      <p>A number that identifies a network operator — like an ISP — used for internet routing.</p>
     </section>
   </article>
 
   <article class="info" id="faq">
     <section>
-      <h2><svg class="icon icon-h2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff5c8a" stroke-width="2"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4.2" fill="none" stroke="#ff5c8a" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="#ff5c8a"/></svg>Frequently Asked Questions</h2>
+      <h2><i class="fa-solid fa-circle-question"></i>Frequently Asked Questions</h2>
       <div class="faq">
         <details>
-          <summary>What is my IP address?</summary>
-          <p>Your IP address is the unique numeric identifier assigned to your device by your internet service provider so it can send and receive data online. This tool detects and displays it automatically at the top of the page.</p>
+          <summary><i class="fa-solid fa-angle-right"></i>What is my IP address?</summary>
+          <p>The number your internet provider gives your device so it can send and receive data online. It's shown automatically on this page.</p>
         </details>
         <details>
-          <summary>Is my IP address my exact location?</summary>
-          <p>No. Your IP address maps to an approximate location, usually your city or region, based on records held by your internet provider. It is not your exact street address and accuracy varies by provider and connection type.</p>
+          <summary><i class="fa-solid fa-angle-right"></i>Is my IP address my exact location?</summary>
+          <p>No. It points to your rough city or region, not your street address, and accuracy varies by provider.</p>
         </details>
         <details>
-          <summary>Can someone track me using my IP address?</summary>
-          <p>An IP address alone reveals only your approximate region and internet provider, not your identity or precise home address. Combined with other data it can contribute to tracking, which is why a VPN adds privacy.</p>
+          <summary><i class="fa-solid fa-angle-right"></i>Can someone track me using my IP?</summary>
+          <p>By itself, an IP only shows your rough region and provider, not your identity. A VPN can hide it for extra privacy.</p>
         </details>
         <details>
-          <summary>Why does my IP address change?</summary>
-          <p>Most home internet connections use dynamic IP addresses that your provider reassigns periodically or when you restart your router. Mobile networks and VPNs also change your visible IP whenever you switch networks or servers.</p>
+          <summary><i class="fa-solid fa-angle-right"></i>Why does my IP address change?</summary>
+          <p>Most home connections use dynamic IPs that your provider reassigns from time to time, including after a router restart.</p>
         </details>
         <details>
-          <summary>What is the difference between IPv4 and IPv6?</summary>
-          <p>IPv4 uses a 32-bit address written as four numbers separated by dots, giving about 4.3 billion possible addresses, which is now nearly exhausted. IPv6 uses a 128-bit address written in hexadecimal groups, providing a vastly larger supply for the growing number of connected devices.</p>
+          <summary><i class="fa-solid fa-angle-right"></i>IPv4 vs IPv6 — what's the difference?</summary>
+          <p>IPv4 addresses are shorter and nearly used up. IPv6 is a longer format built to support far more devices.</p>
         </details>
       </div>
     </section>
   </article>
 </main>
+</div>
 
 <footer class="site">
-  <p>Free IP lookup tool. Data via <a href="https://ipwho.is" rel="noopener noreferrer" target="_blank">ipwho.is</a>. No IP addresses are logged or stored by this site.</p>
-  <p>&copy; <span id="year"></span> What Is My IP</p>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <svg width="26" height="26" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="16" fill="#3454ff"/><circle cx="32" cy="24" r="9" fill="#00d4b8"/><path d="M14 50c3-12 13-18 18-18s15 6 18 18" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+          What Is My IP
+        </div>
+        <p style="font-size:.9rem;color:#8b93bd;max-width:280px;">A free, no-signup tool to check your public IP address and look up details for any IPv4 or IPv6 address.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#lookup"><i class="fa-solid fa-magnifying-glass"></i>IP Lookup</a></li>
+          <li><a href="#guide"><i class="fa-solid fa-book"></i>Guide</a></li>
+          <li><a href="#faq"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Data &amp; Privacy</h3>
+        <ul>
+          <li><a href="https://ipwho.is" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database"></i>Data via ipwho.is</a></li>
+          <li><a href="https://github.com/pulkit899op/what-is-my-ip" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Source on GitHub</a></li>
+          <li><span><i class="fa-solid fa-eye-slash"></i>No IPs logged or stored</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> What Is My IP</span>
+      <span>Built with <i class="fa-solid fa-heart" style="color:#ff5c8a;"></i> — free, forever</span>
+    </div>
+  </div>
 </footer>
-</div>
 
 <script>
 (function(){
@@ -427,6 +435,19 @@
   var lookupResultEl = document.getElementById("lookupResult");
 
   var currentMyIp = "";
+
+  var ICONS = {
+    "IP Address": "fa-solid fa-network-wired",
+    "City": "fa-solid fa-city",
+    "Region": "fa-solid fa-map",
+    "Country": "fa-solid fa-flag",
+    "Postal Code": "fa-solid fa-envelope",
+    "ISP / Organization": "fa-solid fa-building",
+    "ASN": "fa-solid fa-hashtag",
+    "Timezone": "fa-regular fa-clock",
+    "Coordinates": "fa-solid fa-location-crosshairs",
+    "Currency": "fa-solid fa-coins"
+  };
 
   function setStatus(el, msg, kind){
     el.textContent = msg || "";
@@ -465,7 +486,12 @@
       if(!r[1]) return;
       var div = document.createElement("div");
       div.className = "detail";
-      var k = document.createElement("div"); k.className = "k"; k.textContent = r[0];
+      var k = document.createElement("div");
+      k.className = "k";
+      var icon = document.createElement("i");
+      icon.className = ICONS[r[0]] || "fa-solid fa-circle-info";
+      k.appendChild(icon);
+      k.appendChild(document.createTextNode(r[0]));
       var v = document.createElement("div"); v.className = "v"; v.textContent = r[1];
       div.appendChild(k); div.appendChild(v);
       container.appendChild(div);
@@ -483,7 +509,7 @@
   }
 
   function loadMyIp(){
-    myIpEl.textContent = "Detecting…";
+    myIpEl.textContent = "detecting…";
     myIpMetaEl.textContent = "";
     fetchJson(PRIMARY_API)
       .then(function(data){
@@ -491,7 +517,7 @@
         var info = normalize(data, "ipwho");
         currentMyIp = info.ip;
         myIpEl.textContent = info.ip;
-        myIpMetaEl.textContent = [info.city, info.country, info.isp].filter(Boolean).join(" · ");
+        myIpMetaEl.textContent = "(" + [info.city, info.country].filter(Boolean).join(", ") + ")";
       })
       .catch(function(){
         fetchJson(FALLBACK_API)
@@ -499,9 +525,9 @@
             var info = normalize(data, "ipapi");
             currentMyIp = info.ip;
             myIpEl.textContent = info.ip;
-            myIpMetaEl.textContent = [info.city, info.country, info.isp].filter(Boolean).join(" · ");
+            myIpMetaEl.textContent = "(" + [info.city, info.country].filter(Boolean).join(", ") + ")";
           })
-          .catch(function(){ myIpEl.textContent = "Unavailable"; });
+          .catch(function(){ myIpEl.textContent = "unavailable"; });
       });
   }
 
@@ -509,8 +535,8 @@
     if(!currentMyIp) return;
     navigator.clipboard.writeText(currentMyIp).then(function(){
       var prev = myIpMetaEl.textContent;
-      myIpMetaEl.textContent = "Copied to clipboard.";
-      setTimeout(function(){ myIpMetaEl.textContent = prev; }, 1800);
+      myIpMetaEl.textContent = "Copied!";
+      setTimeout(function(){ myIpMetaEl.textContent = prev; }, 1500);
     });
   });
 
@@ -544,7 +570,7 @@
         setStatus(lookupStatusEl, "Showing results for " + info.ip, "ok");
       })
       .catch(function(){
-        setStatus(lookupStatusEl, "Could not look up that IP right now. It may be invalid or a rate limit was hit — try again shortly.", "error");
+        setStatus(lookupStatusEl, "Could not look up that IP right now. It may be invalid, or a rate limit was hit — try again shortly.", "error");
       });
   }
 
