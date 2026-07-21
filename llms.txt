@@ -9,7 +9,7 @@
 - A VPN masks your real IP and shows the VPN server's IP instead, improving privacy.
 
 ## Pages
-- [Home](https://what-is-my-ip.example.com/): IP detection tool, manual IP lookup, and FAQ about IP addresses.
+- [Home](https://ipreveal.github.io/): IP detection tool, manual IP lookup, and FAQ about IP addresses.
 
 ## Data source
 IP geolocation data is provided by ipwho.is (primary) and ipapi.co (fallback), both free public APIs. Data is fetched client-side in the visitor's browser; this site has no backend and stores no IP addresses.
