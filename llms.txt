@@ -1,0 +1,15 @@
+# What Is My IP
+
+> Free browser-based tool that detects and displays a visitor's public IP address, geolocation (city, region, country), ISP/organization, ASN, timezone, and coordinates. Also supports manual lookup of any IPv4 or IPv6 address. No signup, no backend, no tracking or storage of IP addresses.
+
+## Key facts
+- Your IP address is a unique identifier assigned by your ISP so your device can send/receive data online.
+- An IP address reveals approximate city/region and ISP, not an exact street address or personal identity.
+- IP addresses often change (dynamic IP) when a router restarts or a device switches networks.
+- A VPN masks your real IP and shows the VPN server's IP instead, improving privacy.
+
+## Pages
+- [Home](https://what-is-my-ip.example.com/): IP detection tool, manual IP lookup, and FAQ about IP addresses.
+
+## Data source
+IP geolocation data is provided by ipwho.is (primary) and ipapi.co (fallback), both free public APIs. Data is fetched client-side in the visitor's browser; this site has no backend and stores no IP addresses.
